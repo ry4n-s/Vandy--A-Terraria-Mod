@@ -9,7 +9,7 @@ namespace Vandy.Armor
 	{
 		public override void SetStaticDefaults() 
 		{
-			DisplayName.SetDefault("Heroic Pants"); /
+			DisplayName.SetDefault("Heroic Pants"); 
 			Tooltip.SetDefault("7% increased movement speed");
 		}
 
@@ -32,7 +32,7 @@ namespace Vandy.Armor
 			ModRecipe recipe = new ModRecipe(mod);
 			recipe.AddIngredient(ItemID.GoldIngots, 25);
 			recipe.AddIngredient(ItemID.SilverIngots, 25);
-			recipe.AddIngredient(ItemID.DemoniteIngots, 35);
+			recipe.AddIngredient(ItemID.DemoniteIngots, 25);
 			recipe.AddTile(TileID.Anvils);
 			recipe.SetResult(this);
 			recipe.AddRecipe();
