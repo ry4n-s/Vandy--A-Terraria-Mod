@@ -25,12 +25,12 @@ namespace Vandy.Items
 			item.value = 5500;
 			item.rare = 1; 
 			item.autoReuse = true;
-			item.shoot = mod.ProjectileType("HeroicSpearProjectile");
+			item.shoot = mod.ProjectileType("VandySpearProjectile");
 		}
 
         public override bool CanUseItem(Player player)
         {
-			return player.ownedProjectileCounts[mod.ProjectileType("HeroicSpearProjectile")] < 1;
+			return player.ownedProjectileCounts[mod.ProjectileType("VandySpearProjectile")] < 1;
         }
 
         public override void AddRecipes() 
